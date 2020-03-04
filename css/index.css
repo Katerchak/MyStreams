@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
-:root {
-    --primary-color: white;
+:root{
+  --primary-color: white;
 }
 
 h1, p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header .top-navigation {
-    background: black;
-    position: fixed;
-    width: 100%;
+  background: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 header nav .top-menu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0;
-    list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
 }
 
 header nav .top-menu a {
@@ -35,12 +36,68 @@ header nav .top-menu a:hover {
   border: 1px solid var(--primary-color);
 }
 
-header .showcase-content {
-    background-image: url(../img/background.jpg);
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    margin: 0;
-    padding: 0; 
+@media (min-width: 550px) {
+  header nav {
+    display: flex;
+  }
+
+  header nav .top-menu {
+    flex: 1;
+  }
+}
+
+#showcase {
+  background-image: url(../img/background.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0; 
+  position: relative;
+}
+
+#showcase .showcase-content {
+  color: var(--primary-color);
+  font-size: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#showcase .showcase-content .btn-sign-in {
+  margin-top: 2rem;
+  align-self: flex-end;
+  margin-right: 1rem;
+}
+
+#showcase .showcase-content .btn-try-it-now {
+  margin-left: 2rem;
+  align-self: flex-start;
+}
+
+#showcase .showcase-content input {
+  margin: 4rem;
+  width: 25rem;
+  height: 2rem;
+}
+
+#showcase .showcase-content h1 {
+  margin-left: 2rem;
+}
+
+#showcase .showcase-content p {
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  padding: 1rem;
+  color: white;
+  display: inline-block;
+  background: red;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
 }
