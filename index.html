@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="icon" href="img/icon.jpg">
   <link rel="stylesheet" href="css/index.css">
   <title>MyStreams</title>
@@ -10,145 +13,305 @@
 <body>
   <div id="showcase">
     <header>
-        <nav class="top-navigation">
-        <ul class="top-menu">
-            <li>
-            <a href="#mystreams">MyStreams</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#mystreams">MyStreams</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#tabs">Offers</a>
             </li>
-            <li>
-            <a href="#music">Music</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#music">Music</a>
             </li>
-            <li>
-            <a href="#video">Video</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#video">Video</a>
             </li>
-            <li>
-            <a href="#sports">Sports</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#sports">Sports</a>
             </li>
-        </ul>
-        </nav>
+          </ul>
+        </div>
+      </nav>
     </header>
   
     <section class="showcase-content" id="mystreams">
-      <!-- <img src="img/background.jpg" alt="Background"> -->
       <a href="form_sign_in.html" class="btn btn-sign-in">Sign In</a>
       <h1>Welcome to MyStreams</h1>
-      <p>World's biggest streaming platform. Ever.</p>
-      <input type="email" placeholder="Please enter your email" required>
-      <a href="form_register.html" class="btn btn-try-it-now">Try It Now</a>
-      <p>Ready to watch? Enter your email to create or access your account.</p>
+      <p class="lead">World's biggest streaming platform. Ever.</p>
+      <div class="register">
+        <input type="email" placeholder="Please enter your email" required>
+          <a href="#" class="btn btn-try-it-now">Try It Now</a>
+        </div>  
+        <p class="lead">Ready to watch? Enter your email to create or access your account.</p>
     </section>
   </div>
 
-  <section class="music" id="music">
-    <h1>Music</h1>
-    <p>30 million songs. Zero ads.</p>
-    <p>Stream over 30 million songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal MyStreams library — no matter where it came from — lives right alongside the catalog. Start your free three-month trial with no commitment, and cancel anytime.</p>
-    <a href="form_register.html" class="btn btn-start-now">Start now</a>
-    <img src="img/music.png" alt="Music">
+  <section class="tabs" id="tabs">
+    <div class="container">
+      <div id="tab-1" class="tab-item tab-border">
+        <i class="fas fa-door-open fa-3x"></i>
+        <p class="hide-sm">Cancel at any time</p>
+      </div>
+      <div id="tab-2" class="tab-item">
+        <i class="fas fa-tablet-alt fa-3x"></i>
+        <p class="hide-sm">Watch anywhere</p>
+      </div>
+      <div id="tab-3" class="tab-item">
+        <i class="fas fa-tags fa-3x"></i>
+        <p class="hide-sm">Pick your price</p>
+      </div>
+    </div>
   </section>
 
-  <section class="video" id="video">
-    <h1>The movie and TV collection</h1>
-    <p>With over 100,000 movies and TV shows to choose from, there’s always something great to watch on MyStreams and if you watch on our platform, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime, anywhere. Just tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.</p>
-    <a href="#" class="btn btn-read-more">Read More</a>
-    <img src="img/video.png" alt="Video">
+  <section class="tab-content">
+    <div class="container">
+      <!-- Tab Content 1 -->
+      <div id="tab-1-content" class="tab-content-item show">
+        <div class="tab-1-content-inner">
+          <div>
+            <p class="text-lg">
+              If you decide MyStreams isn't for you - no problem. No commitment.
+              Cancel online anytime.
+            </p>
+            <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+          </div>
+          <img src="img/tab-content-1.png" alt="Cancel" />
+        </div>
+      </div>
+
+      <!-- Tab Content 2 -->
+      <div id="tab-2-content" class="tab-content-item">
+        <div class="tab-2-content-top">
+          <p class="text-lg">
+            Watch TV shows and movies anytime, anywhere — personalized for
+            you.
+          </p>
+          <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+        </div>
+        <div class="tab-2-content-bottom">
+          <div>
+            <img src="img/tab-content-2-1.png" alt="TV" />
+            <p class="text-md">
+              Watch on your TV
+            </p>
+            <p class="text-dark">
+              Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+              players and more.
+            </p>
+          </div>
+          <div>
+            <img src="img/tab-content-2-2.png" alt="Mobile" />
+            <p class="text-md">
+              Watch instantly or download for later
+            </p>
+            <p class="text-dark">
+              Available on phone and tablet, wherever you go.
+            </p>
+          </div>
+          <div>
+            <img src="img/tab-content-2-3.png" alt="Laptop" />
+            <p class="text-md">
+              Use any computer
+            </p>
+            <p class="text-dark">
+              Watch right on Netflix.com.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 3 -->
+      <div id="tab-3-content" class="tab-content-item">
+        <div class="text-center">
+          <p class="text-lg">
+            Choose one plan and watch everything on MyStreams.
+          </p>
+          <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Basic</th>
+              <th>Standard</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monthly price after free month ends on 04/19/20</td>
+              <td>$8.99</td>
+              <td>$12.99</td>
+              <td>$15.99</td>
+            </tr>
+            <tr>
+              <td>HD Available</td>
+              <td><i class="fas fa-times"></i></td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Ultra HD Available</td>
+              <td><i class="fas fa-times"></i></td>
+              <td><i class="fas fa-times"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Screens you can watch on at the same time</td>
+              <td>1</td>
+              <td>2</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Watch on your laptop, TV, phone and tablet</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Unlimited movies and TV shows</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Cancel anytime</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>First month free</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </section>
 
-  <section class="sports" id="sports">
-    <h1>Sports</h1>
-    <p>MyStreams is a ground-breaking live and on demand sports streaming service, giving sports fans the control and flexibility to watch their sport, their way. You don’t need a cable or satellite dish to watch it, so the setup is quick and simple. You can watch it on multiple devices at home or on the go, all for an affordable price. It's about putting sports fans first.</p>
-    <img src="img/sports-top.jpg" alt="Sports-top">
-    <br>
-    <a href="form_register.html" class="btn btn-subscribe">Subscribe</a>
-    <br>
-    <img src="img/sports-bottom.jpeg" alt="Sports-bottom">
-    <p>A world of entertainment.</p>
-    <p>Available wherever you are.</p>
+  <section class="section" id="music">
+    <div class="container">
+      <h2 class="section-head"> <i class="fas fa-music"></i>Music</h2>
+      <p class="lead">30 million songs. Zero ads.</p>
+      <p class="lead">Stream over 30 million songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal MyStreams library — no matter where it came from — lives right alongside the catalog. Start your free three-month trial with no commitment, and cancel anytime.</p>
+      <img src="img/music.png" alt="Music">
+      <a href="#" class="btn btn-start-now">Start now</a>
+    </div>
+  </section>
+
+  <section class="section" id="video">
+    <div class="container">
+      <h3>The movie and TV collection</h3>
+      <p class="lead">With over 100,000 movies and TV shows to choose from, there’s always something great to watch on MyStreams and if you watch on our platform, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime, anywhere. Just tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.</p>
+      <a href="#" class="btn btn-read-more">Read More</a>
+      <img src="img/video.png" alt="Video">
+      </div>
+  </section>
+
+  <section class="section" id="sports">
+    <div class="container">
+      <h3>Sports</h3>
+      <p class="lead">MyStreams is a ground-breaking live and on demand sports streaming service, giving sports fans the control and flexibility to watch their sport, their way. You don’t need a cable or satellite dish to watch it, so the setup is quick and simple. You can watch it on multiple devices at home or on the go, all for an affordable price. It's about putting sports fans first.</p>
+      <a href="form_register.html" class="btn btn-subscribe">Subscribe</a>
+    </div>
   </section>
 
   <footer>
-    <div class="footer-cols">
-      <ul>
-        <li>Shop & Learn</li>
-        <li>
-          <a href="#">Music</a>
-        </li>
-        <li>
-          <a href="#">Movies</a>
-        </li>
-        <li>
-          <a href="#">Shows</a>
-        </li>
-        <li>
-          <a href="#">Apps</a>
-        </li>
-        <li>
-          <a href="#">Sports</a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="footer-cols">
+        <ul>
+          <li>Shop & Learn</li>
+          <li>
+            <a href="#">Music</a>
+          </li>
+          <li>
+            <a href="#">Movies</a>
+          </li>
+          <li>
+            <a href="#">Shows</a>
+          </li>
+          <li>
+            <a href="#">Apps</a>
+          </li>
+          <li>
+            <a href="#">Sports</a>
+          </li>
+        </ul>
 
-      <ul>
-        <li>Store</li>
-        <li>
-          <a href="#">Find a Store</a>
-        </li>
-        <li>
-          <a href="#">Today at MyStreams</a>
-        </li>
-        <li>
-          <a href="#">MyStreams Camp</a>
-        </li>
-        <li>
-          <a href="#">Financing</a>
-        </li>
-        <li>
-          <a href="#">Order Status</a>
-        </li>
-      </ul>
+        <ul>
+          <li>Store</li>
+          <li>
+            <a href="#">Find a Store</a>
+          </li>
+          <li>
+            <a href="#">Today at MyStreams</a>
+          </li>
+          <li>
+            <a href="#">MyStreams Camp</a>
+          </li>
+          <li>
+            <a href="#">Financing</a>
+          </li>
+          <li>
+            <a href="#">Order Status</a>
+          </li>
+        </ul>
 
-      <ul>
-        <li>Education & Business</li>
-        <li>
-          <a href="#">Orange & Education</a>
-        </li>
-        <li>
-          <a href="#">Shop For College</a>
-        </li>
-        <li>
-          <a href="#">Business</a>
-        </li>
-        <li>
-          <a href="#">Shop For Business</a>
-        </li>
-        <li>
-          <a href="#">Jobs</a>
-        </li>
-      </ul>
+        <ul>
+          <li>Education & Business</li>
+          <li>
+            <a href="#">Orange & Education</a>
+          </li>
+          <li>
+            <a href="#">Shop For College</a>
+          </li>
+          <li>
+            <a href="#">Business</a>
+          </li>
+          <li>
+            <a href="#">Shop For Business</a>
+          </li>
+          <li>
+            <a href="#">Jobs</a>
+          </li>
+        </ul>
 
-      <ul>
-        <li>About Us</li>
-        <li>
-          <a href="#">Newsroom</a>
-        </li>
-        <li>
-          <a href="#">Leadership</a>
-        </li>
-        <li>
-          <a href="#">Investors</a>
-        </li>
-        <li>
-          <a href="#">Events</a>
-        </li>
-        <li>
-          <a href="#">Contact MyStrems</a>
-        </li>
-      </ul>
+        <ul>
+          <li>About Us</li>
+          <li>
+            <a href="#">Newsroom</a>
+          </li>
+          <li>
+            <a href="#">Leadership</a>
+          </li>
+          <li>
+            <a href="#">Investors</a>
+          </li>
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">Contact MyStrems</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
     <div class="footer-bottom text-center">
-      Copyright &copy; 2018 Orange myTunes
+      Copyright &copy; 2020 MyStreams
     </div>
   </footer>
   
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
